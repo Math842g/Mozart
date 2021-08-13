@@ -10,7 +10,7 @@ namespace Mozart
     {
         static void Main(string[] args)
         {
-            int[,] minuetten = new int[16, 11]
+            int[,] minuet = new int[16, 11]
             { { 96, 22, 69, 40, 148, 104, 152, 119, 98, 3, 54},
             {22, 6, 95, 17, 74, 157, 60, 84, 142, 87, 130},
             {141, 128, 158, 113, 163, 27, 171, 114, 42, 165, 10},
@@ -27,7 +27,7 @@ namespace Mozart
             {49, 18, 58, 160, 136, 162, 168, 115, 38, 59, 124},
             {109, 116, 145, 52, 1, 23, 89, 72, 149, 173, 44},
             {14, 83, 79, 170, 93, 151, 172, 111, 8, 78, 131}};
-            int[,] trioen = new int[16, 6]
+            int[,] trio = new int[16, 6]
             {{72, 56, 75, 40, 83, 18},
             {6, 82, 39, 73, 3, 45},
             {59, 42, 54, 16, 28, 62},
@@ -44,12 +44,35 @@ namespace Mozart
             {95, 35, 58, 87, 23, 60},
             {19, 47, 90, 33, 50, 78},
             {66, 88, 21, 10, 91, 31} };
-
+            int delstykker = 32;
+            string[] files = new string[32];
             Random rnd = new Random();
             System.Media.SoundPlayer sp = new
             System.Media.SoundPlayer();
-            
+
+            for(int i = 0; i < delstykker; i++)
+            {
+                int terning = rnd.Next(1, 7);
+                int terning1 = rnd.Next(1, 7);
+                int terningSum = (terning + terning1) -2;
+                if(i < 16)
+                {
+                    files[i] = @"C:\Users\zbcmatbj\source\repos\Mozart\Mozart\Properties\Wave\M" + minuet[i, terningSum] + ".wav";
+                }
+                else
+                {
+                    files[i] = @"C:\Users\zbcmatbj\source\repos\Mozart\Mozart\Properties\Wave\T" + minuet[i - (delstykker / 2), terningSum] + ".wav";
+                }
             }
+
+            foreach (string musicelement in files)
+
+            {
+                sp.SoundLocation = musicelement;
+                sp.Load();
+                sp.PlaySync();
+            }
+            Console.ReadKey();
         }
     }
 }
