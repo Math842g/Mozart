@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58036D66-49DA-4F4A-879E-7980A23EFBDF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mozart</RootNamespace>
+    <AssemblyName>Mozart</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M44.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M48.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M51.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M52.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M53.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M54.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M55.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M56.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M57.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M58.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M59.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M61.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M62.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M63.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M64.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M65.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M66.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M67.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M68.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M69.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M71.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M72.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M73.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M74.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M75.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M76.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M77.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M78.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M79.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M81.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M82.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M83.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M84.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M85.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M86.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M87.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M88.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M89.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M91.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M92.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M93.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M94.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M96.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M97.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M98.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M99.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M101.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M102.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M103.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M104.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M105.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M106.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M107.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M108.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M109.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M110.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M111.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M112.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M113.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M114.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M115.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M116.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M117.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M118.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M119.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M120.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M121.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M122.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M123.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M124.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M125.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M126.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M127.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M128.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M129.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M130.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M131.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M132.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M133.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M134.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M135.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M136.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M137.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M138.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M139.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M140.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M141.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M142.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M143.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M144.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M145.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M146.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M147.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M148.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M149.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M150.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M151.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M152.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M153.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M154.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M155.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M156.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M157.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M158.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M159.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M160.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M161.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M162.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M163.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M164.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M165.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M166.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M167.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M168.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M169.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M170.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M171.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M172.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M173.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M174.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M175.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\M176.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T44.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T48.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T51.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T52.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T53.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T54.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T55.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T56.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T57.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T58.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T59.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T61.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T62.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T63.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T64.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T65.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T66.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T67.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T68.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T69.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T71.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T72.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T73.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T74.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T75.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T76.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T77.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T78.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T79.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T81.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T82.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T83.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T84.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T85.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T86.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T87.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T88.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T89.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T91.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T92.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T93.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T94.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Wave\T96.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
